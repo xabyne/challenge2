@@ -1,0 +1,130 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet");
+
+#body{ 
+	background-image:url(ochtend.jpeg);
+	background-image:url(overdag.jpg); 
+	background-image:url(avondvalt.jpeg); 
+	background-image:url(nacht.jpeg); 
+	background-repeat: no-repeat;
+}  
+
+#digitaleKlok{
+	text-align: center;
+	font-size: 55px;
+	font-family: 'Orbitron', sans-serif;
+	/*color: #282a2d;*/
+	color: white;
+}
+
+#uren{
+	display: inline-block;
+	position: relative;
+}
+
+#minuten{
+	display: inline-block;
+		position: relative;
+
+}
+
+#seconden{
+	display: inline-block;
+		position: relative;
+
+}
+
+.dubbelePunt{
+	display: inline-block;
+		position: relative;
+
+}
+
+#datum{
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Orbitron', sans-serif;
+	color: white;
+	margin-top: 200px;
+}
+
+#logo{
+	width: 200px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	height: 300px;
+	grid-gap: 0px;
+	padding: 0px;
+	margin: 0px;
+
+	grid-template-areas:
+	"logo"
+	"datum"
+	"digitaleKlok"
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1023px){
+	.grid-container{
+		height: 300px;
+	}
+
+	#logo{
+		width: 280px;
+	}
+
+	#digitaleKlok{
+		font-size: 100px;
+	}
+
+	#datum{
+		padding-top: 150px;
+		font-size: 35px;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
+	.grid-container{
+		height: 500px;
+	}
+
+	#logo{
+		width: 300px;
+	}
+
+	#datum{
+		font-size: 40px;
+	}
+
+	#digitaleKlok{
+		font-size: 110px;
+	}
+}
+
+@media only screen and (min-width: 1366px){
+	.grid-container{
+		height: 500px;
+	}
+
+	#logo{
+		width: 300px;
+	}
+
+	#datum{
+		font-size: 40px;
+		margin-top: 150px ;
+	}
+
+	#digitaleKlok{
+		font-size: 130px;
+	
+	}
+}
+
+
