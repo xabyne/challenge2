@@ -94,13 +94,13 @@ function animatieMinuten(){
 	var mediaquerie1365 = window.matchMedia("(max-width: 1365px)");
 
 	if (mediaquerie639.matches){ //als die gelijk is aan de max width van hierboven, daar staat matches voor.
-		animatie.from(vergroten, 1, {fontSize: 45});
+		animatie.from(vergroten, 1, {fontSize: 50});
 	}
 	else if (mediaquerie1023.matches){
-		animatie.from(vergroten, 1, {fontSize: 85});
+		animatie.from(vergroten, 1, {fontSize: 90});
 	}
 	else if (mediaquerie1365.matches){
-		animatie.from(vergroten, 1, {fontSize: 95});
+		animatie.from(vergroten, 1, {fontSize: 110});
 	}
 	else {
 		animatie.from(vergroten, 1, {fontSize: 115});
